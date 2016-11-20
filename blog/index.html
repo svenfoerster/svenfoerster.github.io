@@ -1,0 +1,11 @@
+---
+layout: default
+title: Sven's Blog
+---
+<ul>
+  {% for post in site.posts %}
+    <li>
+      {{ post.url }} {{ post.title }}
+    </li>
+  {% endfor %}
+</ul>
