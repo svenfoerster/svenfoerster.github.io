@@ -1,11 +1,95 @@
 .ralewaythin {
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
+  font-size: 30px;
 }
 
-.appetizer {
-  text-align: center;
-  font-size: 72px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+#logo {
+    font-family: 'Lusitana';
+    font-size: 30px;
+    border: 2px solid black;
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
 }
+
+#logo:hover {
+    background-color: black;
+    color: white;
+}
+
+#navigationbar {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#navigationbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navigationbar ul li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#navigationbar a {
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#headertop {
+    border-top: 2px solid black;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.photo {
+    width: 100%;
+    height: 300px;
+    background-image: url("/images/intro.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.photo1 {
+    margin-top: 25px;
+    width: 100%;
+    height: 300px;
+    background-image: url("/images/footer.jpg");
+    background-size: cover;
+    background-position: center 60%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.myFooter {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.myFooter img {
+    opacity: 0.3;
+}
+
+.myFooter img:hover {
+    opacity: 1;
+}
+
+.myFooter a {
+    margin-right: 10px;
+}
+

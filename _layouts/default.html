@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lusitana" rel="stylesheet"> 
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="/css/main.css" rel="stylesheet" type="text/css">
 
-    <title>Sven Förster</title>
-  </head>
+        <title>Sven's Blog</title>
+    </head>
 
-  <body>
-    <div class="container-fluid">
-      <div class="row bg-primary appetizer ralewaythin">
-        Dont give up!
-      </div>
-    </div>
+    <body>
+        <div id="headertop">
+            <a id="logo" href="http://svenfoerster.github.io">SF</a>
+        </div>
 
-    {{ content }}
+        <nav id="navigationbar">
+                <ul>
+                    <li><a href="/index.html">Blog</a></li>
+                    <li><a href="/index.html">Fotos</a></li>
+                    <li><a href="/index.html">Kontakt</a></li>
+                </ul>
+        </nav>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </body>
+        <div class="photo"></div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    {{ content }}            
+                </div>
+            </div>
+        </div>
+
+        <div class="photo1"></div>
+
+        <div class="container-fluid myFooter">
+            <a href="http://github.com/svenfoerster"><img src="/images/GitHub-Mark-32px.png"></a>
+            <a href="#"><img src="/images/FB.png"></a>
+        </div>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
 </html>

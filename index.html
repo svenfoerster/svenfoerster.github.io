@@ -1,4 +1,52 @@
 ---
 layout: default
-title: Sven Förster
 ---
+<div class="jumbotron" style="background-color:white;text-align:center">
+    <h1>Artikelverzeichnis</h1>
+    <p>insgesamt {{paginator.total_posts}} veröffentlicht</p>
+</div>
+
+<div class="row" style="margin-bottom: 30px">
+    {% for post in paginator.posts %}
+        <div class="col-sm-3" style="text-align:center">
+            <h1>{{ post.title }}</h1>
+            <p>
+                <span class="glyphicon glyphicon-pencil" style="margin-right:5px"> </span> am {{ post.date | date: "%-d/%-m/%y" }}
+            </p>
+            <p>
+                <span class="glyphicon glyphicon-user" style="margin-right:5px"> </span> {{ post.author }}
+            </p>
+            <p><span class="glyphicon glyphicon-flag" style="margin-right: 5px"></span>
+                {% if post.schwimmen %}
+                    Swim: {{ post.schwimmen }} km, 
+                {% endif %}
+                {% if post.rad %}
+                    Bike: {{ post.rad }} km, 
+                {% endif %}
+                {% if post.laufen %}
+                    Run: {{ post.laufen }} km
+                {% endif %}
+            </p>
+            <div class="content">
+                {{ post.description }} <a href="{{ post.url }}"> weiter.. </a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+<div style="text-align:center">
+<div class="pagination">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous glyphicon glyphicon-arrow-left" style="margin-right:5px"></a>
+    {% else %}
+        <span class="previous glyphicon glyphicon-arrow-left" style="margin-right:5px"></span>
+    {% endif %}
+    
+    <span class="page_number ">Seite: {{ paginator.page }} von {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next glyphicon glyphicon-arrow-right" style="margin-left:5px"></a>
+    {% else %}
+        <span class="next glyphicon glyphicon-arrow-right" style="margin-left:5px"></span>
+    {% endif %}
+</div>
+</div>
