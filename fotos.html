@@ -1,0 +1,51 @@
+---
+layout: gallery
+images:
+  - image_path: /images/album/img1.jpg
+    title: Test1
+  - image_path: /images/album/img2.jpg
+    title: Test1
+  - image_path: /images/album/img3.jpg
+    title: Test1
+  - image_path: /images/album/img4.jpg
+    title: Test1
+  - image_path: /images/album/img5.jpg
+    title: Test1
+  - image_path: /images/album/img6.jpg
+    title: Test1
+  - image_path: /images/album/img7.jpg
+    title: Test1
+  - image_path: /images/album/img8.jpg
+    title: Test1
+  - image_path: /images/album/img9.jpg
+    title: Test1
+  - image_path: /images/album/img10.jpg
+    title: Test1
+  - image_path: /images/album/img11.jpg
+    title: Test1
+  - image_path: /images/album/img12.jpg
+    title: Test1
+  - image_path: /images/album/img13.jpg
+    title: Test1
+  - image_path: /images/album/img14.jpg
+    title: Test1
+  - image_path: /images/album/img15.jpg
+    title: Test1
+  - image_path: /images/album/img16.jpg
+    title: Test1
+  - image_path: /images/album/img17.jpg
+    title: Test1
+  - image_path: /images/album/img18.jpg
+    title: Test1
+  - image_path: /images/album/img19.jpg
+    title: Test1
+  - image_path: /images/album/img20.jpg
+    title: Test1
+---
+<ul class="photogallery" style="margin-bottom:30px">
+    {% for image in page.images %}
+        <li>
+            <img src="{{ image.image_path }}" alt="{{ image.title }}">
+        </li>
+    {% endfor %}
+</ul>

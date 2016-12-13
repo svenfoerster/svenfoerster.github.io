@@ -93,3 +93,21 @@ img {
     margin-right: 10px;
 }
 
+ul.photogallery {
+    text-align: center;
+}
+
+.photogallery, .photogallery li {
+    list-style: none;
+    padding: 0;
+}
+
+.photogallery li {
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.photogallery li img {
+    width: 250px;
+    height: 250px;
+}
