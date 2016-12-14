@@ -48,9 +48,12 @@ img {
 }
 
 #headertop {
-    border-top: 2px solid black;
     padding-top: 10px;
     text-align: center;
+}
+
+.ruletop {
+    border-top: 2px solid black;
 }
 
 .photo {
@@ -77,8 +80,7 @@ img {
 
 .myFooter {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .myFooter img {
@@ -90,7 +92,7 @@ img {
 }
 
 .myFooter a {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 ul.photogallery {
@@ -110,4 +112,26 @@ ul.photogallery {
 .photogallery li img {
     width: 250px;
     height: 250px;
+}
+
+.footruler {
+    border-bottom: 15px solid black;
+}
+
+.m2 {
+    background-color: #DE1B1B;
+    height: 150px;
+}
+
+.m3 {
+    background-color: white;
+    color: #DE1B1B;
+    text-align: center;
+    height: 300px;
+    font-size: 72px;
+}
+
+.filler1 {
+    background-color: #DE1B1B;
+    height: 20px;
 }

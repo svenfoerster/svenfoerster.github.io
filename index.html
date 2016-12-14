@@ -12,10 +12,8 @@ layout: default
             <h1>{{ post.title }}</h1>
             <p>
                 <span class="glyphicon glyphicon-pencil" style="margin-right:5px"> </span> am {{ post.date | date: "%-d/%-m/%y" }}
-                - <a href="{{post.url}}#disqus_thread"></a>
-            </p>
-            <p>
-            <span class="glyphicon glyphicon-user" style="margin-right:5px"> </span><a href="/team.html">{{ post.author }}</a>
+                <span style="margin-left: 5px; margin-right: 5px"> - </span>
+                <span class="glyphicon glyphicon-user" style="margin-right:5px"> </span><a href="/team.html">{{ post.author }}</a>
             </p>
             <p><span class="glyphicon glyphicon-flag" style="margin-right: 5px"></span>
                 {% if post.schwimmen %}
