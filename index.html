@@ -8,7 +8,7 @@ layout: default
 
 <div class="row" style="margin-bottom: 30px">
     {% for post in paginator.posts %}
-        <div class="col-sm-3" style="text-align:center">
+        <div class="col-sm-6" style="text-align:center">
             <h1>{{ post.title }}</h1>
             <p>
                 <span class="glyphicon glyphicon-pencil" style="margin-right:5px"> </span> am {{ post.date | date: "%-d/%-m/%y" }}
